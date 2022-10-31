@@ -11,14 +11,16 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
-    background-color: ${p => p.theme.background};
   }
 
   body.fontLoaded {
     font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
-  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
   p,
   label {
     line-height: 1.5em;
